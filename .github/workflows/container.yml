@@ -4,10 +4,10 @@ on:
     branches:
       - master
     paths:
-      - "app2/1.container/**"
+      - "app2/container/**"
 defaults:
   run:
-    working-directory: app2/1.container
+    working-directory: app2/container
 
 jobs:
   build:
