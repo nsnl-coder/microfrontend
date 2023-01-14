@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import {
-  StyleProvider,
+  StylesProvider,
   createGenerateClassName,
 } from "@material-ui/core/styles";
 
