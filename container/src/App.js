@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import { BrowserRouter } from "react-router-dom";
 
 import {
-  StyleProvider,
+  StylesProvider,
   createGenerateClassName,
 } from "@material-ui/core/styles";
 
@@ -14,14 +14,14 @@ const generateClassName = createGenerateClassName({
 
 const App = () => {
   return (
-    <StyleProvider generateClassName={generateClassName}>
+    <StylesProvider generateClassName={generateClassName}>
       <BrowserRouter>
         <div>
           <Header />
           <MarketingApp />
         </div>
       </BrowserRouter>
-    </StyleProvider>
+    </StylesProvider>
   );
 };
 
